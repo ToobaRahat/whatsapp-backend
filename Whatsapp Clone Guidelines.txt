@@ -1,0 +1,131 @@
+
+npx create-react-app whatsapp-clone
+
+npm install -g firebase-tools
+
+npm start
+
+npm install @material-ui/core
+
+
+<IconButton> gives an icon clickable animation
+
+
+.sidebar__searchContainer > input {
+  border: none;
+  outline-width: 0; //it removes the ugly frame when we type something
+  margin-left: 10px;
+}
+
+
+...............
+
+make new folder out the app folder whatsapp-backend
+cd into it
+
+git init
+
+npm init
+
+at entry point: write server.js
+
+now after all questions package.json file will appear 
+here we add this in the scripts: "start": "node server.js"
+
+now run command:
+npm i express mongoose
+
+add node_modules in gitignore file
+
+add server.js file here we creating API
+
+create a new project on mongodb website , build free cluster
+
+in server.js file express server running on port 9000
+
+status 200 means ok
+
+to run the code we use nodemon, first install it globally
+
+npm i -g nodemon
+
+now run it with
+
+nodemon server.js
+
+
+in mongodb add a new project , then add a cluster
+then add user and password in database access 
+and your ip address in network access
+now back to cluster here connect to your application copy the string from here
+add it in the code , and rename password and dbname
+
+then add the code as it is and add post get request
+now check these post get request on postman
+
+after checking, sign in to pusher.com, fill the form and then copy the code from their paste it below the app config section, change var to const
+
+mongodb is not real time you need to refresh it everytime
+pusher is used for real time, by using pusher we use mongodb change stream, this change stream triggers the pusher then pusher trigger our frontend in real time
+
+front end triggers the backend then 
+backend trigger the pusher then 
+pusher triggers the frontend in real time
+
+now we dont need to wait to refresh to get the data through mongodb
+
+to make this work,install
+
+npm i pusher
+
+add the pusher code and test it on the postman untils it saves data on the mongodb
+
+npm i cors
+
+---------------
+
+on pusher website -> getting started :
+
+copy code from there and paste it in useEffect Hook in App.js
+and rename these
+
+my-channel to messages
+
+my-event to inserted
+
+now run in front-end whatsapp-clone directory:
+
+npm i pusher-js
+
+now import this in App.js file:
+
+import Pusher from "pusher-js";
+
+
+COMMAND FOR BACKEND:
+
+C:\Users\92347\React Native Whatsapp-Clone\whatsapp-backend>nodemon server.js
+
+COMMAND FOR FRONT END:
+
+C:\Users\92347\React Native Whatsapp-Clone\whatsapp-clone>npm start
+
+-------------
+
+to fetch data on frontend
+
+npm i axios
+
+
+
+
+
+
+
+
+
+
+
+
+
+
